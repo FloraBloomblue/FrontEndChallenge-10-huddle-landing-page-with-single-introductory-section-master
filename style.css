@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 30px;
+}
+.wholeContainer{
+    width: 300px; 
+}
+.logo{
+    width: 300px;
+    margin-bottom: 50px;   
+}
+.logo img{
+    width: 40%;
+}
+.mainImage{
+    margin-bottom: 20px; 
+}
+.mainImage img{
+    width: 100%;
+    height:auto;
+
+}
+.content{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+p{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px; 
+}
+button{
+    align-self: center;
+    margin-bottom: 50px; 
+}
+.button{
+    width: 70%;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 2px 5px hsl(257, 27%, 22%);
+}
+.button:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialMedia img{
+    width: 40px;
+}
+.hoverEffect{
+    position: relative;
+}
+.onHover{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(300, 69%, 71%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .3s ease;
+    border-radius: 50%;
+}
+.hoverEffect:hover .onHover{
+    opacity: 0.5; 
+}
+@media screen and (min-width: 960px){
+    body{
+        background-color: hsl(257, 40%, 49%);
+        background-image: url('images/bg-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        min-height: 50vh; 
+    }
+    .wholeContainer{
+        width: 90%;
+    }
+    .logo img{
+        width: 60%;
+    }
+    .mainBox{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:50px
+    }
+    .mainImage{
+        width:600px;
+    }
+    .mainImage img{
+        height:auto;
+    }
+    .content{
+        margin-top: 50px;
+        width:90%;
+        text-align: left;
+    }
+    h1{
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    p{
+        font-size: 1.02rem;
+        text-align: left;
+    }
+    .button{
+        width: 40%;
+        height: 50px;
+    }
+    .socialMedia{
+        justify-content: end;
+        margin-right: 40px;
+    }
+}
