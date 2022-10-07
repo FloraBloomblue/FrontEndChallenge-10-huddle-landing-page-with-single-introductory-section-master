@@ -102,7 +102,7 @@ button{
         background-image: url('images/bg-desktop.svg');
         background-repeat: no-repeat;
         background-position: center; 
-        min-height: 50vh; 
+        min-height: 100vh; 
     }
     .wholeContainer{
         width: 90%;
